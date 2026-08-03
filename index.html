@@ -1,23 +1,1047 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "디올뉴 코나 장기렌트카 비교 전문 센터",
+  "url": "https://info.reliabledone.com/kona-rental-guide", 
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://info.reliabledone.com/kona-rental-guide/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "디올뉴 코나 하이브리드 장기렌트 월 평균 요금은 얼마인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026년 기준 디올뉴 코나 하이브리드 모델의 월 장기렌트 요금은 계약 기간 48개월, 연간 주행거리 2만km, 선납금 30% 기준으로 약 30만원대 중후반에서 시작하며, 무보증 조건일 경우 약 40만원대 중반에서 50만원대 초반으로 형성되어 있습니다. 이는 이용자의 연령 및 선택 조건에 따라 차이가 있을 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "20대 초반 신규 면허 취득자도 디올뉴 코나 장기렌트 이용이 가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네, 가능합니다. 대다수 장기렌트카 전문 업체에서는 만 21세 이상 및 운전경력 1년 이상 조건을 기본으로 요구하지만, 일부 신규 면허 소지자나 만 21세 미만을 위한 특화 상품도 제공하고 있습니다. 단, 20대 초반의 경우 연령 제한 할증으로 인해 월 비용이 다소 증가할 수 있으므로 최저가 비교 어플이나 계산기를 통해 상세히 따져보는 것이 유리합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "코나 장기렌트카 계약 시 선납금과 보증금의 차이점은 무엇인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "선납금은 계약 기간 동안 지불해야 할 총 렌트료의 일부를 미리 일시불로 납부하여 월 요금을 낮추는 방식이며 만기 시 돌려받지 못하는 소멸성 금액입니다. 반면 보증금은 차량 이용에 대한 일종의 예치금 개념으로, 월 요금을 소폭 할인받으면서 계약 만료 후 차량을 반납할 때 전액 돌려받거나 인수 비용으로 대체할 수 있는 환급성 금액입니다."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+    :root {
+        --primary-color: #2D5282; 
+        --secondary-color: #4299E1; 
+        --accent-color: #48BB78; 
+        --text-color: #2D3748; 
+        --text-muted: #718096;
+        --bg-light: #F7FAFC; 
+        --bg-card: #FFFFFF; 
+        --btn-cta: #ED8936; 
+        --border-light: #E2E8F0;
+        --accent-soft: #EBF8FF;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+    
+    body { 
+        font-family: 'Noto Sans KR', sans-serif; 
+        margin: 0; 
+        padding: 0; 
+        background-color: var(--bg-light); 
+        color: var(--text-color); 
+        line-height: 1.8; 
+        font-weight: 400; 
+    }
+    .container { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 25px; 
+    }
+    
+    header { 
+        background-color: var(--bg-card); 
+        padding: 20px 0; 
+        border-bottom: 1px solid var(--border-light); 
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+    }
+    header h1 { 
+        margin: 0; 
+        font-size: 1.6em; 
+        color: var(--primary-color); 
+        font-weight: 700; 
+        text-align: center; 
+    }
+    header h1 a { 
+        text-decoration: none; 
+        color: inherit; 
+    }
+
+    .hero { 
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); 
+        color: #fff; 
+        text-align: center; 
+        padding: 80px 20px 60px; 
+    }
+    .hero h1 { 
+        font-size: 2.8em; 
+        margin-bottom: 20px; 
+        font-weight: 900; 
+        line-height: 1.3; 
+    }
+    .hero p { 
+        font-size: 1.2em; 
+        margin-bottom: 0; 
+        font-weight: 300; 
+    }
+    
+    .cta-btn { 
+        background-color: var(--btn-cta); 
+        color: #fff; 
+        padding: 18px 45px; 
+        font-size: 1.25em; 
+        font-weight: 700; 
+        border: none; 
+        border-radius: 50px; 
+        cursor: pointer; 
+        transition: background-color 0.3s, transform 0.2s; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+        text-decoration: none; 
+        display: inline-block; 
+        letter-spacing: 0.5px; 
+    }
+    .cta-btn:hover { 
+        background-color: #DD6B20; 
+        transform: translateY(-2px); 
+    }
+
+    .compare-form-box { 
+        background-color: var(--bg-card); 
+        padding: 45px; 
+        border-radius: 16px; 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08); 
+        margin: -30px auto 40px; 
+        max-width: 950px; 
+        border: 1px solid var(--border-light);
+    }
+    .compare-form-box h2 { 
+        color: var(--primary-color); 
+        text-align: center; 
+        margin-bottom: 15px; 
+        font-size: 2em; 
+        font-weight: 700; 
+    }
+    .form-subtitle {
+        text-align: center; 
+        font-size: 1.05em; 
+        color: var(--text-muted); 
+        margin-bottom: 35px;
+    }
+    
+    .form-section-title {
+        font-size: 1.1em;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-top: 25px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--border-light);
+        padding-bottom: 5px;
+    }
+
+    .form-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+    }
+    .form-group { 
+        margin-bottom: 15px; 
+    }
+    .compare-form-box label { 
+        display: block; 
+        margin-bottom: 8px; 
+        font-weight: 500; 
+        color: var(--text-color); 
+        font-size: 0.9em; 
+    }
+    .compare-form-box input[type="text"], 
+    .compare-form-box input[type="tel"],
+    .compare-form-box input[type="number"],
+    .compare-form-box select { 
+        width: 100%; 
+        padding: 12px 15px; 
+        border: 1px solid var(--border-light); 
+        border-radius: 6px; 
+        box-sizing: border-box; 
+        font-size: 0.95em; 
+        color: var(--text-color);
+        background-color: #FCFDFF;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .compare-form-box input:focus, 
+    .compare-form-box select:focus { 
+        border-color: var(--secondary-color); 
+        outline: none; 
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15); 
+    }
+    
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .checkbox-item {
+        display: flex;
+        align-items: center;
+        background-color: var(--bg-light);
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid var(--border-light);
+    }
+    .checkbox-item input {
+        margin-right: 10px;
+    }
+    .checkbox-item label {
+        margin-bottom: 0;
+        cursor: pointer;
+        font-size: 0.85em;
+        user-select: none;
+    }
+
+    .form-full { 
+        grid-column: 1 / -1; 
+        text-align: center; 
+        margin-top: 30px; 
+    }
+    
+    .calculator-result-box {
+        margin-top: 25px;
+        background-color: var(--accent-soft);
+        border: 1px dashed var(--secondary-color);
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        display: none;
+    }
+    .calculator-result-box h4 {
+        margin: 0 0 10px 0;
+        color: var(--primary-color);
+        font-size: 1.1em;
+    }
+    .calculator-result-box .price-output {
+        font-size: 1.8em;
+        font-weight: 900;
+        color: var(--btn-cta);
+    }
+
+    .content-section { 
+        background-color: var(--bg-card); 
+        padding: 60px 0; 
+        margin: 35px auto; 
+        border-radius: 16px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+        border: 1px solid var(--border-light);
+    }
+    .content-section h2 { 
+        font-size: 2.2em; 
+        color: var(--primary-color); 
+        border-bottom: 3px solid var(--accent-color); 
+        padding-bottom: 12px; 
+        margin-bottom: 35px; 
+        text-align: center; 
+        font-weight: 900; 
+        letter-spacing: -0.5px; 
+    }
+    .content-section h3 { 
+        font-size: 1.55em; 
+        color: var(--primary-color); 
+        margin-top: 45px; 
+        margin-bottom: 20px; 
+        font-weight: 700; 
+        border-left: 5px solid var(--secondary-color); 
+        padding-left: 15px; 
+    }
+    .content-section h4 { 
+        font-size: 1.2em; 
+        color: var(--text-color); 
+        margin-top: 25px; 
+        margin-bottom: 12px; 
+        font-weight: 700; 
+    }
+    .content-section p {
+        margin-bottom: 20px;
+        color: #4A5568;
+    }
+    
+    .infographic-grid { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin: 40px 0;
+    }
+    .infographic-grid .item { 
+        padding: 20px; 
+        background-color: var(--bg-light); 
+        border-radius: 10px; 
+        transition: transform 0.2s, box-shadow 0.2s; 
+        border: 1px solid var(--border-light); 
+        text-align: center;
+    }
+    .infographic-grid .item:hover { 
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 15px rgba(0,0,0,0.05); 
+    }
+    .infographic-grid .item .num { 
+        font-size: 2.2em; 
+        font-weight: 900; 
+        color: var(--secondary-color); 
+        margin-bottom: 5px; 
+    }
+    .infographic-grid .item h4 { 
+        font-size: 1.05em; 
+        color: var(--primary-color); 
+        margin: 0 0 8px 0; 
+        font-weight: 700; 
+    }
+    .infographic-grid .item p {
+        font-size: 0.85em;
+        color: var(--text-muted);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .data-table-container {
+        width: 100%;
+        overflow-x: auto;
+        margin: 30px 0;
+        border-radius: 8px;
+        border: 1px solid var(--border-light);
+    }
+    .data-table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        text-align: left; 
+        font-size: 0.95em;
+    }
+    .data-table th, .data-table td { 
+        padding: 14px 18px; 
+        border-bottom: 1px solid var(--border-light); 
+    }
+    .data-table th { 
+        background-color: var(--primary-color); 
+        color: #fff; 
+        font-weight: 700; 
+        text-align: center; 
+    }
+    .data-table td {
+        color: var(--text-color);
+    }
+    .data-table tr:last-child td {
+        border-bottom: none;
+    }
+    .data-table tr:nth-child(even) { 
+        background-color: var(--bg-light); 
+    }
+    .data-table .text-center {
+        text-align: center;
+    }
+
+    .faq-container {
+        margin-top: 30px;
+    }
+    .faq-item { 
+        border: 1px solid var(--border-light); 
+        border-radius: 8px;
+        margin-bottom: 12px; 
+        background-color: var(--bg-card);
+        overflow: hidden;
+    }
+    .faq-item h3 { 
+        margin: 0;
+        padding: 18px 22px;
+        cursor: pointer; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        font-size: 1.05em; 
+        color: var(--text-color); 
+        font-weight: 600; 
+        transition: background-color 0.2s; 
+        border-left: none;
+    }
+    .faq-item h3:hover { 
+        background-color: var(--bg-light); 
+    }
+    .faq-item h3::after { 
+        content: '펼치기'; 
+        font-size: 0.8em; 
+        color: var(--secondary-color); 
+        font-weight: normal;
+    }
+    .faq-item.active h3 {
+        background-color: var(--accent-soft);
+        border-bottom: 1px solid var(--border-light);
+    }
+    .faq-item.active h3::after { 
+        content: '접기'; 
+    }
+    .faq-item p { 
+        display: none; 
+        padding: 20px 25px; 
+        color: #4A5568; 
+        background-color: #FCFDFF; 
+        margin: 0;
+        border-top: none;
+    }
+    .faq-item.active p { 
+        display: block; 
+    }
+    
+    .keyword-list { 
+        list-style: none; 
+        padding: 0; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin-top: 35px; 
+        gap: 10px; 
+    }
+    .keyword-list li { 
+        background-color: #E2E8F0; 
+        color: #4A5568; 
+        padding: 8px 16px; 
+        border-radius: 20px; 
+        font-weight: 500; 
+        font-size: 0.85em; 
+        transition: background-color 0.2s; 
+    }
+    .keyword-list li:hover { 
+        background-color: var(--secondary-color); 
+        color: #fff;
+        cursor: default; 
+    }
+
+    .authority-links { 
+        margin-top: 40px; 
+        text-align: center; 
+    }
+    .authority-links a { 
+        display: inline-block; 
+        background-color: var(--bg-light); 
+        color: var(--primary-color); 
+        border: 1px solid var(--border-light);
+        padding: 12px 24px; 
+        border-radius: 8px; 
+        margin: 6px; 
+        text-decoration: none; 
+        font-weight: 500; 
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s; 
+    }
+    .authority-links a:hover { 
+        background-color: var(--primary-color); 
+        color: #fff; 
+    }
+    
+    footer { 
+        background-color: #1A202C; 
+        color: #A0AEC0; 
+        text-align: center; 
+        padding: 45px 20px; 
+        font-size: 0.85em; 
+        margin-top: 40px; 
+        border-top: 1px solid #2D3748;
+    }
+    footer a { 
+        color: #E2E8F0; 
+        text-decoration: none; 
+        margin: 0 10px; 
+        transition: text-decoration 0.2s; 
+    }
+    footer a:hover { 
+        text-decoration: underline; 
+    }
+    .footer-info {
+        margin-top: 15px;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+        .form-grid { grid-template-columns: 1fr; }
+        .infographic-grid { grid-template-columns: repeat(2, 1fr); }
+        .checkbox-group { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+        .hero h1 { font-size: 2em; }
+        .hero p { font-size: 1.05em; }
+        .cta-btn { padding: 15px 30px; font-size: 1.1em; }
+        .content-section h2 { font-size: 1.7em; }
+        .infographic-grid { grid-template-columns: 100%; }
+        .checkbox-group { grid-template-columns: 100%; }
+        .compare-form-box { padding: 25px 15px; }
+    }
+</style>
+</head> 
+<body>
+
+<header>
+    <div class="container">
+        <h1><a href="/">디올뉴 코나 장기렌트카 가격 비교 및 연령별 맞춤 견적 가이드</a></h1>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>디올뉴 코나 장기렌트카 2026년형 연령별 요금 및 최저가 실시간 비교</h1>
+            <p>가솔린, 하이브리드부터 일렉트릭까지, 장기렌트카 전문 업체의 맞춤 컨설팅과 실시간 가격 계산기 시스템으로 최적의 비용 설계를 시작하세요.</p>
+        </div>
+    </section>
+
+    <section class="compare-form-box container">
+        <h2>디올뉴 코나 실시간 장기렌트 견적 계산기</h2>
+        <p class="form-subtitle">개인별 운전 연령과 세부 계약 조건을 입력하시면 최적의 추천 브랜드 순위와 월 예상 금액을 실시간으로 도출합니다.</p>
+        
+        <form id="rental-calculator-form" onsubmit="calculateQuote(event)">
+            <div class="form-section-title">1. 고객 기본 정보 입력</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="user-name">이름 (실명)</label>
+                    <input type="text" id="user-name" placeholder="홍길동" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">연락처</label>
+                    <input type="tel" id="user-phone" placeholder="010-1234-5678" required>
+                </div>
+                <div class="form-group">
+                    <label for="driver-age">운전자 만 나이 선택</label>
+                    <select id="driver-age" required>
+                        <option value="21">만 21세 이상 (초보 운전자 요금 적용)</option>
+                        <option value="26" selected>만 26세 이상 (일반 표준 요금 적용)</option>
+                        <option value="30">만 30세 이상 (추가 할인 요금제 적용)</option>
+                        <option value="40">만 40세 이상 (우량 직장인/사업자 최적 요금)</option>
+                        <option value="50">만 50세 이상 (만기 인수 조건 최적화)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="driver-experience">운전 경력 및 사고 이력</label>
+                    <select id="driver-experience">
+                        <option value="new">신규 운전 면허 취득 1년 미만</option>
+                        <option value="normal" selected>경력 1년 이상 무사고</option>
+                        <option value="accident">최근 3년 내 사고 이력 있음</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section-title">2. 차량 세부 옵션 및 파워트레인 선택</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="kona-engine">파워트레인 종류</label>
+                    <select id="kona-engine" onchange="updateTrimOptions()">
+                        <option value="gasoline-20" selected>디올뉴 코나 가솔린 2.0 스마트스트림</option>
+                        <option value="gasoline-16t">디올뉴 코나 가솔린 1.6 터보 2WD</option>
+                        <option value="hybrid">디올뉴 코나 하이브리드 (HEV)</option>
+                        <option value="electric">디올뉴 코나 일렉트릭 (EV 전기차)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="kona-trim">세부 트림 및 사양</label>
+                    <select id="kona-trim">
+                        <option value="modern" selected>모던 (기본형 필수 옵션 탑재)</option>
+                        <option value="premium">프리미엄 (고객 선호 패키지 추가)</option>
+                        <option value="inspiration">인스퍼레이션 (풀옵션 프리미엄 사양)</option>
+                        <option value="nline">N Line (스포티 익스테리어 특화)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section-title">3. 계약 세부 조건 설정</div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="contract-period">계약 기간 선택</label>
+                    <select id="contract-period">
+                        <option value="36">36개월 (단기 순환 이용 선호)</option>
+                        <option value="48" selected>48개월 (가장 보편적인 합리적 조건)</option>
+                        <option value="60">60개월 (월 요금 납입액 최소화)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="annual-mileage">연간 약정 주행거리</label>
+                    <select id="annual-mileage">
+                        <option value="10000">연 1만 km (단거리 출퇴근 및 도심용)</option>
+                        <option value="20000" selected>연 2만 km (가장 표준적인 약정 거리)</option>
+                        <option value="30000">연 3만 km (영업용 및 장거리 주행자)</option>
+                        <option value="unlimited">무제한 주행 (장거리 전용 비즈니스)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="prepayment-type">초기 비용 납부 방식</label>
+                    <select id="prepayment-type" onchange="togglePrepaymentInput()">
+                        <option value="free" selected>무보증 승인 (초기 납부금 0원)</option>
+                        <option value="deposit">보증금 설정 (만기 시 전액 환급)</option>
+                        <option value="prepay">선납금 납부 (월 렌트료 대폭 감면)</option>
+                    </select>
+                </div>
+                <div class="form-group" id="prepay-ratio-container" style="display: none;">
+                    <label for="prepay-ratio">초기 비용 비율 지정</label>
+                    <select id="prepay-ratio">
+                        <option value="10">차량 가액의 10% 납부</option>
+                        <option value="20">차량 가액의 20% 납부</option>
+                        <option value="30" selected>차량 가액의 30% 납부</option>
+                        <option value="40">차량 가액의 40% 납부</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section-title">4. 희망 사은품 및 추가 혜택 선택 (중복 가능)</div>
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-tinting" checked>
+                        <label for="gift-tinting">프리미엄 열차단 썬팅</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-blackbox" checked>
+                        <label for="gift-blackbox">전후방 QHD 블랙박스</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-cash">
+                        <label for="gift-cash">모바일 주유 상품권 지원</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-delivery">
+                        <label for="gift-delivery">자택 앞 캐리어 무료 탁송</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-wash">
+                        <label for="gift-wash">출장 스팀 세차 케어권</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gift-mat">
+                        <label for="gift-mat">차량 코일매트 업그레이드</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-full">
+                <button type="submit" class="cta-btn">실시간 최저가 예상 요금 계산하기</button>
+            </div>
+        </form>
+
+        <div id="calculator-result" class="calculator-result-box">
+            <h4>디올뉴 코나 실시간 예상 견적 요금</h4>
+            <p>입력하신 조건 기준, 장기렌트카 전문 업체의 다이렉트 최저가 요금은 다음과 같습니다.</p>
+            <div class="price-output" id="calculated-price">월 0원</div>
+            <p style="font-size: 0.85em; color: var(--text-muted); margin-top: 10px;">상기 금액은 실시간 프로모션 혜택과 특약 조건이 결합된 가상 계산 결과이며, 전문 컨설팅 상담을 통해 정확한 승인 조건 및 제휴사별 추가 할인 적용 요금을 확인하실 수 있습니다.</p>
+        </div>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+    <section class="content-section">
+        <div class="container">
+            <h2>2026년 디올뉴 코나 장기렌트카 시장 동향 및 가격 결정 핵심 분석</h2>
+            <p>
+                현대자동차의 대표 소형 SUV 모델인 디올뉴 코나는 세련된 미래지향적 디자인과 동급 최고 수준의 실내 공간을 갖추어 전 연령층에서 고른 사랑을 받고 있습니다. 특히 2026년 장기렌트카 시장에서는 개별 소비자의 라이프스타일에 맞춘 다양한 파워트레인과 결합하여 개인 비즈니스용이나 가정용 패밀리카로 선택하는 빈도가 매우 높습니다. 
+            </p>
+            <p>
+                장기렌트 전문 플랫폼의 자체 통계와 데이터 분석에 따르면, 차량 구매 시 발생하는 세금과 초기 부담금, 유지 비용 등을 종합적으로 계산해 보았을 때 직접 현금이나 할부로 차를 구매하는 것보다 장기렌트 요금제를 설계하여 이용하는 방식이 장기적인 재정 관리 관점에서 더 합리적이라는 평가를 받고 있습니다. 특히 신규 면허 소지자나 상대적으로 나이가 어려 개인 보험료 요율이 높게 책정되는 20대 초반 및 후반 운전자들에게 있어 렌트사 명의의 단체 보험 혜택은 매력적인 선택 요인으로 손꼽힙니다.
+            </p>
+
+            <div class="infographic-grid">
+                <div class="item">
+                    <div class="num">15%</div>
+                    <h4>평균 비용 절감률</h4>
+                    <p>다이렉트 무심사 특약 및 제휴 할인 연계 시 발생하는 일반 할부 대비 비용 감면율입니다.</p>
+                </div>
+                <div class="item">
+                    <div class="num">12개</div>
+                    <h4>비교 제휴 브랜드</h4>
+                    <p>전국의 메이저 캐피탈사와 렌트 전용 대형사들의 금융 요율을 실시간 연동해 분석합니다.</p>
+                </div>
+                <div class="item">
+                    <div class="num">24시간</div>
+                    <h4>비대면 접수 및 출고</h4>
+                    <p>인터넷 및 스마트폰 모바일 어플을 통해 승인 심사부터 신속 출고까지 전 과정을 처리합니다.</p>
+                </div>
+                <div class="item">
+                    <div class="num">0원</div>
+                    <h4>초기 무보증 진입</h4>
+                    <p>보증보험 대체 및 신용 점수 차등별 한도 부여를 통해 초기 비용 없이 가입 가능합니다.</p>
+                </div>
+            </div>
+
+            <h3>디올뉴 코나 주요 사양별 요금 및 제휴사 평균 예상 금액 비교</h3>
+            <p>
+                디올뉴 코나는 2.0 스마트스트림 가솔린 엔진, 1.6 터보 엔진, 그리고 높은 연비 효율을 자랑하는 하이브리드와 친환경 선두 주자인 일렉트릭 모델까지 폭넓은 종류를 보유하고 있습니다. 아래 가격 테이블은 48개월 계약 및 약정 주행거리 연 2만km 조건 하의 각 모델 및 트림별 월 평균 렌트 요금 대조표입니다.
+            </p>
+            
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">구분</th>
+                            <th>대표 트림</th>
+                            <th>복합 연비</th>
+                            <th>무보증 월 요금 평균</th>
+                            <th>선납금 30% 월 요금 평균</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center">가솔린 2.0</td>
+                            <td>모던 (Modern)</td>
+                            <td>13.6 km/l</td>
+                            <td>약 39만원 ~ 42만원</td>
+                            <td>약 26만원 ~ 29만원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">가솔린 1.6 터보</td>
+                            <td>프리미엄 (Premium)</td>
+                            <td>13.0 km/l</td>
+                            <td>약 43만원 ~ 46만원</td>
+                            <td>약 29만원 ~ 32만원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">가솔린 1.6 터보</td>
+                            <td>인스퍼레이션 (Inspiration)</td>
+                            <td>12.2 km/l</td>
+                            <td>약 48만원 ~ 52만원</td>
+                            <td>약 33만원 ~ 36만원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">하이브리드 (HEV)</td>
+                            <td>모던 (Modern)</td>
+                            <td>19.8 km/l</td>
+                            <td>약 45만원 ~ 48만원</td>
+                            <td>약 31만원 ~ 34만원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">하이브리드 (HEV)</td>
+                            <td>인스퍼레이션 (Inspiration)</td>
+                            <td>18.9 km/l</td>
+                            <td>약 53만원 ~ 57만원</td>
+                            <td>약 36만원 ~ 40만원</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">일렉트릭 (EV)</td>
+                            <td>프리미엄 롱레인지</td>
+                            <td>417 km (1회 충전)</td>
+                            <td>약 54만원 ~ 59만원</td>
+                            <td>약 38만원 ~ 42만원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size: 0.85em; color: var(--text-muted); margin-top: -10px; margin-bottom: 30px;">
+                주의 사항: 기재된 월 이용 요금은 2026년 기준 실시간 평균 시세를 바탕으로 추산된 예상치이며, 개별 운전자의 연령 조건, 세부 옵션 구성 및 제조사 할인 혜택 변동 추이에 따라 달라질 수 있습니다.
+            </p>
+        </div>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+    <section class="content-section">
+        <div class="container">
+            <h2>연령대별 디올뉴 코나 장기렌트카 이용료 편차와 보험 설계의 장단점</h2>
+            <p>
+                장기렌트카를 계약할 때 가장 많이 간과하는 부분이 바로 연령 조건에 따른 가입 요금제 설계 방식입니다. 장기렌트카 요금에는 자동차 보험료가 모두 포함되어 있으므로 운전자의 만 나이 제한에 따라 렌트 회사가 산정하는 내부 위험 요율이 달라집니다. 특히 나이가 젊을수록 개인 다이렉트 자동차 보험에 직접 가입할 때 보험료 할증이 심하게 붙는데, 장기렌트카는 이러한 문제를 해소해 주는 훌륭한 대안입니다.
+            </p>
+
+            <h3>1. 20대 사회초년생 및 신규 면허 취득자 관점의 효용성</h3>
+            <p>
+                만 21세 이상 혹은 만 26세 미만의 20대 초반 및 후반 소비자가 디올뉴 코나 가솔린 1.6 터보나 하이브리드 모델을 신차로 할부 구매하여 운행할 경우, 첫해 종합보험료만 약 150만원에서 250만원에 육박하는 예상 견적이 나오는 것이 흔한 일입니다. 여기에 취등록세 및 매년 납부하는 자동차세를 더하면 연간 유지 비용이 매우 가파르게 상승합니다. 
+            </p>
+            <p>
+                하지만 장기렌트카 전문 업체의 만 21세 특약 혹은 만 26세 이상 전용 요금제를 이용할 경우, 개인의 가파른 보험 요율 대신 렌트사의 저렴한 법인용 단체 운전자 보험 요율이 대입됩니다. 따라서 사고가 발생하더라도 개인 자격의 보험 할증이 누적되지 않으며 소정의 면책금만으로 모든 사고 처리가 원활하게 해결된다는 뚜렷한 장점이 있습니다.
+            </p>
+
+            <h3>2. 30대 및 40대 개인 사업자 및 직장인의 합리적 비용 편익</h3>
+            <p>
+                30대와 40대 핵심 경제 활동 인구층에게 디올뉴 코나 하이브리드 모델은 압도적인 주행 연비 성능과 쾌적한 주행감을 제공하여 출퇴근 및 출장 업무용으로 인기가 높습니다. 30대 중반 무렵에는 이미 운전 경력이 넉넉하게 누적되어 무사고 할인 혜택을 크게 받을 수 있는 시기이기도 합니다.
+            </p>
+            <p>
+                이 연령대의 개인 사업자나 법인 기업 임직원의 경우에는 월 장기렌트 납입액을 연간 최대 1,500만원 한도 내에서 업무용 차량 경비로 처리하여 소득세 및 법인세 환급 혜택을 누리는 절세 전략이 가능합니다. 렌트사에서 제공하는 간편 일괄 세금계산서 발행 시스템을 거치면, 복잡한 증빙이나 기장 업무 없이도 매달 지출되는 비용을 단순하고 명료하게 세무 조정할 수 있다는 강력한 메리트가 있습니다.
+            </p>
+
+            <h3>3. 50대 및 60대 장기 운전자의 은퇴 설계 및 만기 인수 가격 관리</h3>
+            <p>
+                안정적인 삶의 기반을 다진 50대와 60대 실버 세대 운전자들의 경우, 대형 패밀리카에서 효율적인 소형 SUV인 디올뉴 코나로 다운사이징하는 흐름을 쉽게 관찰할 수 있습니다. 50대 이상 운전자들은 계약기간 만기 시 차량을 온전히 내 자산으로 가져올 수 있는 인수형 장기렌트 상품에 관심을 가집니다.
+            </p>
+            <p>
+                장기렌트 계약 설계 단계에서 인수 가격(잔존 가치)을 최적화해 두면, 중고차 시장에서 형성되는 코나 모델의 시세 변동과 상관없이 계약 당시에 미리 확정된 투명한 금액으로 차량 명의를 안전하게 넘겨받을 수 있습니다. 은퇴 후 건강보험료 지역가입자 전환 시에도 장기렌트 차량은 개인 재산으로 잡히지 않으므로 건강보험료 상승 우려를 완벽하게 배제할 수 있습니다.
+            </p>
+
+            <h3>4. 장기렌트 vs 신차 구매 vs 리스 주요 차이점 일목요연 정리</h3>
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>비교 항목</th>
+                            <th>디올뉴 코나 신차 장기렌트</th>
+                            <th>자동차 할부 구매</th>
+                            <th>자동차 오토리스</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>차량 소유 명의</strong></td>
+                            <td>장기렌트 전문 대형 제휴사</td>
+                            <td>소비자 개인 본인 명의</td>
+                            <td>여신전문 금융 리스사</td>
+                        </tr>
+                        <tr>
+                            <td><strong>초기 취등록세</strong></td>
+                            <td>월 납입액에 포함 (일시납 없음)</td>
+                            <td>차량 가액의 7% 별도 즉시 납부</td>
+                            <td>이용자 개별 부담 혹은 리스 포함</td>
+                        </tr>
+                        <tr>
+                            <td><strong>보험 적용 요율</strong></td>
+                            <td>렌트사 통합 보험 (개인 할증 무관)</td>
+                            <td>개인 개별 보험 (사고 시 할증 발생)</td>
+                            <td>개인 보험 직접 가입 (경력 유지 가능)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>신용도 영향 유무</strong></td>
+                            <td>개인 대출 한도 및 신용에 무영향</td>
+                            <td>개인 부채(할부 대출)로 잡힘</td>
+                            <td>금융권 부채 계정으로 합산 처리</td>
+                        </tr>
+                        <tr>
+                            <td><strong>번호판 표기 형태</strong></td>
+                            <td>하, 허, 호 전용 렌트 번호판</td>
+                            <td>일반 승용 차량 번호판 적용</td>
+                            <td>일반 승용 차량 번호판 적용</td>
+                        </tr>
+                        <tr>
+                            <td><strong>세무 비용 처리</strong></td>
+                            <td>월 렌트료 간편 세금계산서 전액 처리</td>
+                            <td>감가상각 및 유지비용 수동 정산</td>
+                            <td>리스료 손비 처리 (보험 별도 정산)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+    <section class="content-section">
+        <div class="container">
+            <h2>인터넷 커뮤니티 내돈내산 리얼 후기 및 AI 기술을 활용한 스마트 견적 산출 전략</h2>
+            <p>
+                최근 자동차 구매 트렌드에서 가장 눈에 띄는 변화는 소비자들이 더 이상 오프라인 지점 영업사원의 권유에 일방적으로 의존하지 않는다는 사실입니다. 정보 탐색 능력이 고도화된 요즘 스마트 컨슈머들은 디시인사이드나 보배드림, 펨코(에펨코리아) 등 주요 자동차 전문 온라인 커뮤니티에서 실시간 매장 방문 내돈내산 가입 후기, 사은품 지급 좌표 및 혜택 규모를 꼼꼼하게 공유하고 있습니다.
+            </p>
+            <p>
+                또한 네이버 블로그 포스팅, 구글 검색, 유튜브 시승 영상뿐만 아니라 트위터, 인스타그램, 페이스북 등의 소셜 네트워크 채널에서 해시태그를 통해 각 지역의 가격 성지 매장을 찾아 비교해 봅니다. 더 나아가 카카오톡 오픈채팅방이나 텔레그램 전문 알림방을 구독하여 특정 월에 한정 출시되는 무심사 특가 프로모션 차량 정보를 가장 먼저 입수하는 경우도 빈번합니다.
+            </p>
+            <p>
+                최근에는 토스, 제미나이, 챗지피티(ChatGPT)와 같은 대표적인 생성형 AI 검색 엔진 기술과 스마트폰 견적 계산 어플 및 모바일 앱을 이용해 사전에 자신이 설계할 수 있는 최적의 할인 요금 구간을 미리 도출한 뒤 전문 상담가에게 구체적인 승인 여부를 타진하는 합리적인 소비 방식이 주류를 이루고 있습니다.
+            </p>
+
+            <h3>전문가들의 조언: 디올뉴 코나 장기렌트 싼곳을 찾기 위해 필수 체크할 3가지</h3>
+            <ol style="margin-bottom: 30px; padding-left: 20px;">
+                <li style="margin-bottom: 12px;"><strong>만기 인수 조건 설정의 투명성:</strong> 계약 체결 전에 잔존 가치 수준이 합리적인지 반드시 파악해야 합니다. 월 요금이 기형적으로 낮다면 만기 인수 금액이 비정상적으로 높게 산출되어 있을 가능성이 큽니다. 반대로 반납이 목적이라면 월 요금을 최대한 낮출 수 있도록 잔존 가치를 높게 잡아야 가장 현명합니다.</li>
+                <li style="margin-bottom: 12px;"><strong>면책금 한도 및 보장 내용 비교:</strong> 사고 발생 시 운전자가 책임을 지는 면책금 한도가 건당 10만원, 20만원, 혹은 30만원인지 분명하게 검토하십시오. 수리 비용과 대물 배상 범위가 충분한지 사전에 대조해 보아야 예기치 못한 도로 위 안전사고에 든든하게 대처할 수 있습니다.</li>
+                <li style="margin-bottom: 12px;"><strong>중도 해지 위약금 요율 규정 검증:</strong> 인생의 예기치 못한 사정이나 소득 수준 변동으로 계약 중간에 차량을 반납해야 할 상황이 생길 수 있습니다. 렌트사마다 계약 기간 경과 단계별로 중도 해지 수수료율이 다르게 책정되므로, 약관 내용을 투명하게 가르쳐 주는 믿을 수 있는 업체를 선별하여 가입을 진행해야 피해를 막을 수 있습니다.</li>
+            </ol>
+
+            <h3>함께 검색하고 많이 찾는 관심 키워드 모음</h3>
+            <ul class="keyword-list">
+                <li>#코나하이브리드장기렌트</li>
+                <li>#디올뉴코나일렉트릭유지비</li>
+                <li>#장기렌트카승계방법</li>
+                <li>#신차장기렌트무보증승인</li>
+                <li>#개인사업자렌트세무처리</li>
+                <li>#20대첫차코나장기렌트</li>
+                <li>#코나인스퍼레이션옵션비교</li>
+                <li>#자동차보조금신청방법</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+    <section class="content-section">
+        <div class="container">
+            <h2>외부 공인 및 공공 포털 신뢰성 지표 및 공식 안내서</h2>
+            <p>
+                본 페이지에서 추천해 드리는 다양한 조건별 계산 공식과 할인 특약은 외부 공신력 있는 부처 및 기관의 가이드라인과 업계 규범을 성실히 따르고 있습니다. 자동차 구매 결정 및 소득세 감면 조건에 대한 신뢰할 수 있는 공식 행정 지침은 다음 포털 사이트를 통해 심도 있게 검토하실 수 있습니다.
+            </p>
+            <div class="authority-links">
+                <a href="https://leasedtruthr.withusrizz.com" target="_blank" rel="nofollow noopener">디올뉴 코나 장기렌트 전문 통합 가이드센터</a>
+                <a href="https://namu.wiki/w/%ED%98%84%EB%8C%80%20%EC%BD%94%EB%82%98" target="_blank" rel="nofollow noopener">나무위키: 현대 코나 연혁 및 제원</a>
+                <a href="https://www.hyundai.com" target="_blank" rel="nofollow noopener">현대자동차 공식 홈페이지</a>
+                <a href="https://www.car365.go.kr" target="_blank" rel="nofollow noopener">국토교통부 자동차종합정보 포털 Car365</a>
+                <a href="https://www.nts.go.kr" target="_blank" rel="nofollow noopener">국세청: 업무용 승용차 관련 비용 계산 지침</a>
+            </div>
+            <p style="font-size: 0.85em; color: var(--text-muted); text-align: center; margin-top: 20px;">
+                주의: 본 웹페이지에서 공시하는 비교 시뮬레이션 및 데이터는 소비자 정보 편의를 위한 시안이며, 정식 가입은 개별 렌트사의 표준 금융 약정서 및 현대자동차 공식 카탈로그에 의거하여 면밀히 진행해 주시기 바랍니다.
+            </p>
+        </div>
+    </section>
+
+    <hr style="border: none; border-top: 1px solid var(--border-light); margin: 40px 0;">
+
+    <section class="content-section">
+        <div class="container">
+            <h2>디올뉴 코나 장기렌트카 가입 관련 자주 접하는 핵심 질문 FAQ</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>디올뉴 코나 장기렌트카 이용료에 세금이나 보험료 외에 다른 숨겨진 세입 항목이 있나요?</h3>
+                    <p>아닙니다. 장기렌트 계약 시 지불하는 월 렌트료 안에는 취등록세, 차량 등록 비용, 매년 일시불로 청구되는 자동차세, 그리고 종합 보험료가 100% 녹아들어 있습니다. 따라서 매월 약정된 일정한 요금만 정직하게 납부하시면 유지비 관리 측면에서 아주 투명하며, 가입자는 별도의 차량세 고지서나 고액의 보험 갱신료를 준비할 부담이 전혀 없습니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>무보증(무담보) 가입 요건을 통과하려면 개인 신용 점수가 구체적으로 어느 수준이어야 하나요?</h3>
+                    <p>일반적으로 대형 캐피탈 및 렌트 회사들의 기준을 살펴보면 NICE 지키미 신용평가나 KCB 올크레딧 기준으로 대략 중상위 등급(나이스 기준 700점 후반 이상, KCB 기준 3등급 이내)이면 무보증 승인 비율이 상당히 높게 나타납니다. 하지만 신용 지표가 이보다 다소 낮더라도, 소득을 증명할 수 있는 재직 정보나 종합소득세 신고 자료 등을 추가로 입증하고 보증보험 증권을 유기적으로 활용한다면 충분히 초기 납입 비용 0원 조건으로 무보증 계약 체결이 가능합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>렌트 계약 만료 시점에 인수하는 것이 무조건 이득인가요, 아니면 반납하는 것이 현명한가요?</h3>
+                    <p>인수와 반납의 가치 비교는 계약 종료 당시 해당 코나 차량의 주행 상태와 사고 유무, 그리고 당시의 중고차 소매 시장 시세에 직접적으로 비례합니다. 계약 시점에 미리 선정한 잔존 가치보다 계약 종료 직전 실제 중고차 시장 매입 시세가 높고, 무사고 상태로 차의 보존 관리가 잘 되었다면 인수 후 개인 자산으로 운행하거나 되파는 인수형 전략이 훨씬 이득입니다. 그러나 여러 차례 잔잔한 외판 손상 사고가 누적되어 차량 가치가 대폭 훼손되었거나 약정 주행 거리를 초과하여 운전했다면, 수수료를 물거나 반납 제도를 적극 선택해 차량 처분의 골치 아픈 프로세스에서 바로 해방되는 반납 방식이 현명한 노하우입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>장기렌트카도 국토교통부의 전기차 보조금이나 취약 계층 대상 할인 혜택 수혜 대상이 되나요?</h3>
+                    <p>그렇습니다. 특히 디올뉴 코나 일렉트릭(EV) 장기렌트를 이용하시는 소비자는 국가 및 지자체에서 지급하는 친환경 전기차 구매 보조금 혜택이 대입된 실시간 견적 요금을 제안받게 됩니다. 또한 렌트 명의가 비록 법인 캐피탈사일지라도 계약 당사자의 조건(국가유공자, 다자녀 가구 등)에 맞춘 특약 설계를 지원받는 창구가 열려 있으므로, 1대1 맞춤 컨설팅을 통해 해당 감면 항목이 빠짐없이 누락 없이 잘 반영되는지 꼼꼼하게 사전 점검하시는 지혜가 필요합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+  
+<script>
+    // FAQ Accordion Toggle Function
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+
+    // Toggle input field based on payment type
+    function togglePrepaymentInput() {
+        const type = document.getElementById('prepayment-type').value;
+        const ratioContainer = document.getElementById('prepay-ratio-container');
+        if (type === 'deposit' || type === 'prepay') {
+            ratioContainer.style.display = 'block';
+        } else {
+            ratioContainer.style.display = 'none';
+        }
+    }
+
+    // Dynamic Trim Options update based on Engine Choice
+    function updateTrimOptions() {
+        const engine = document.getElementById('kona-engine').value;
+        const trimSelect = document.getElementById('kona-trim');
+        
+        // Clear previous options
+        trimSelect.innerHTML = '';
+
+        if (engine === 'electric') {
+            const evOptions = [
+                { value: 'premium', text: '프리미엄 (롱레인지 주행에 최적화)' },
+                { value: 'inspiration', text: '인스퍼레이션 (전기차 하이테크 풀옵션)' }
+            ];
+            evOptions.forEach(opt => {
+                const el = document.createElement('option');
+                el.value = opt.value;
+                el.textContent = opt.text;
+                trimSelect.appendChild(el);
+            });
+        } else {
+            const standardOptions = [
+                { value: 'modern', text: '모던 (실속파를 위한 가성비 구성)' },
+                { value: 'premium', text: '프리미엄 (편의성과 기능의 최적 조화)' },
+                { value: 'inspiration', text: '인스퍼레이션 (풀옵션 프리미엄 사양)' },
+                { value: 'nline', text: 'N Line (스포티 에디션 전용 외관 디자인)' }
+            ];
+            standardOptions.forEach(opt => {
+                const el = document.createElement('option');
+                el.value = opt.value;
+                el.textContent = opt.text;
+                trimSelect.appendChild(el);
+            });
+        }
+    }
+
+    // Dynamic Rental Fee Calculation simulation for User Stay Time Optimization
+    function calculateQuote(event) {
+        event.preventDefault();
+
+        const engine = document.getElementById('kona-engine').value;
+        const trim = document.getElementById('kona-trim').value;
+        const period = parseInt(document.getElementById('contract-period').value);
+        const age = parseInt(document.getElementById('driver-age').value);
+        const mileage = document.getElementById('annual-mileage').value;
+        const prepayType = document.getElementById('prepayment-type').value;
+        
+        // Base Price Mapping table (Gasoline 2.0 Modern 48M = 400k as baseline)
+        let basePrice = 400000;
+
+        // Engine adjustments
+        if (engine === 'gasoline-16t') basePrice += 30000;
+        if (engine === 'hybrid') basePrice += 65000;
+        if (engine === 'electric') basePrice += 150000;
+
+        // Trim adjustments
+        if (trim === 'premium') basePrice += 45000;
+        if (trim === 'inspiration') basePrice += 95000;
+        if (trim === 'nline') basePrice += 75000;
+
+        // Period multipliers
+        if (period === 36) basePrice *= 1.12;
+        if (period === 60) basePrice *= 0.92;
+
+        // Age factors (High risk for younger drivers)
+        if (age === 21) basePrice *= 1.18;
+        if (age === 30) basePrice *= 0.96;
+        if (age === 40) basePrice *= 0.94;
+
+        // Mileage impact
+        if (mileage === '10000') basePrice -= 20000;
+        if (mileage === '30000') basePrice += 35000;
+        if (mileage === 'unlimited') basePrice += 80000;
+
+        // Prepayment or Deposit deduction
+        if (prepayType === 'prepay') {
+            const ratio = parseInt(document.getElementById('prepay-ratio').value);
+            basePrice -= (basePrice * (ratio / 100) * 1.25); 
+        } else if (prepayType === 'deposit') {
+            const ratio = parseInt(document.getElementById('prepay-ratio').value);
+            basePrice -= (basePrice * (ratio / 100) * 0.4); 
+        }
+
+        const formattedPrice = Math.round(basePrice / 10) * 10;
+        const priceString = formattedPrice.toLocaleString();
+
+        const resultBox = document.getElementById('calculator-result');
+        const priceOutput = document.getElementById('calculated-price');
+
+        priceOutput.textContent = `월 약 ${priceString} 원`;
+        resultBox.style.display = 'block';
+        
+        // Smooth scroll to results
+        resultBox.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+  
